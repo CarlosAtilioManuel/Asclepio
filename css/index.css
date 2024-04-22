@@ -1,0 +1,159 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #017cc2;
+}
+
+.containerMine {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    background-color: aliceblue;
+    width: 350px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.form input {
+    margin: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form button {
+    margin: 10px;
+    height: 40px;
+    background-color: #017cc2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+.form button:hover {
+    background-color: #017bc2a6;
+    transition: all .3s ease;
+}
+
+.form span {
+    text-align: center;
+}
+
+hr {
+    margin: 0 10px;
+    color: #000;
+    background-color: #000;
+}
+
+.hide {
+    display: none;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    margin: 10px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 300px;
+}
+
+#cadastroPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 600px;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+
+#cadastroPage img {
+    border-radius: 50%;
+}
+
+#cadastroPage input {
+    color: #000;
+    padding: 10px;
+}
+
+#cadastroPage input[type="button"] {
+    background-color: #017cc2;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#btn-close-cadastro:hover {
+    color: #017cc2;
+    cursor: pointer;
+    transition: all .3s ease;
+    transform: scale(.9);
+}
+
+.form-12 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1px;
+
+    width: 700px;
+    /* height: 450px; */
+    margin-bottom: 10px;
+}
+
+
+.form-12 div {
+    display: flex;
+    flex-direction: column;
+}
+.form-12 div input {
+    width: 200px;
+    height: 40px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.rounded-4{
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    #loginPage {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-12 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+}
+
